@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ripley.interfacesfinal_danielmenendez.appActivity">
+
+        <FrameLayout
+            android:id="@+id/imageLayout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/uni" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/scrim_gradient" />
+
+        </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:paddingTop="20dp"
+        android:text="The Library"
+        android:textColor="@color/DarkPrimaryColor"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <TextView
+            android:id="@+id/textTap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageLayout"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:paddingHorizontal="15dp"
+            android:paddingTop="120dp"
+            android:text="Dl 11 sl 14 de diciempre, el Campus de Villaviciosa participa en el Mercadillo Solidario de Libros Organizado por la Biblioteca CRAI Dulce Chacon"
+            android:layout_alignParentBottom="false"
+            android:textColor="@color/Black"
+            />
+        <HorizontalScrollView
+            android:id="@id/LinearScroll"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            >
+            <LinearLayout
+                android:id="@+id/LinearScroll"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/twitter"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="86dp"
+                    android:layout_height="match_parent"
+                    android:text="Twitter"
+                    android:textStyle="bold"
+                    android:paddingTop="15dp"/>
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/youtube"
+                    />
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:text="Youtube"
+                    android:textStyle="bold"
+                    android:paddingTop="15dp"/>
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/instagram"
+                    />
+
+                <TextView
+                    android:layout_width="83dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Instagram"
+                    android:textStyle="bold"
+                    android:paddingTop="15dp"/>
+
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+</RelativeLayout>

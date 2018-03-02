@@ -1,0 +1,28 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.ripley.interfacesfinal_danielmenendez.appActivity">
+    <item
+        android:id="@+id/libro"
+        android:icon="@drawable/book"
+        android:title="Item"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_settings1"
+        android:orderInCategory="100"
+        android:title="Alumni"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings2"
+        android:orderInCategory="100"
+        android:title="Perfil"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/portatil"
+        android:icon="@drawable/laptop"
+        android:orderInCategory="100"
+        android:title="huella"
+        app:showAsAction="always"
+        />
+</menu>
